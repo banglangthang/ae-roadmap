@@ -1,0 +1,12 @@
+[project]
+name = "01-ai-chatbot-cli"
+version = "0.1.0"
+description = "Learn about using openai api, managing chat history"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "tiktoken>=0.5.0",
+]
