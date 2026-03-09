@@ -94,10 +94,10 @@ You should be able to run your script and see the AI respond.
 ## Step 3: Build the Chat Loop
 
 ### Tasks
-- [ ] Create a loop that takes user input
-- [ ] Send input to API
-- [ ] Display response
-- [ ] Repeat until user quits
+- [x] Create a loop that takes user input
+- [x] Send input to API
+- [x] Display response
+- [x] Repeat until user quits
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
