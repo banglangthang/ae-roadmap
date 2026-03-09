@@ -8,8 +8,8 @@ Build a command-line chatbot that integrates with LLM APIs (OpenAI/Anthropic). T
 ---
 
 ## Learning Objectives
-- [ ] Python fundamentals for AI development
-- [ ] Working with REST APIs
+- [x] Python fundamentals for AI development
+- [x] Working with REST APIs
 - [ ] LLM API integration (OpenAI/Anthropic)
 - [ ] Prompt engineering techniques
 - [ ] Conversation history management
@@ -38,9 +38,9 @@ Build a command-line chatbot that integrates with LLM APIs (OpenAI/Anthropic). T
 ## Step 1: Environment Setup
 
 ### Tasks
-- [ ] Create a virtual environment
-- [ ] Install required packages
-- [ ] Set up your API key securely
+- [x] Create a virtual environment
+- [x] Install required packages
+- [x] Set up your API key securely
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
@@ -63,9 +63,9 @@ Build a command-line chatbot that integrates with LLM APIs (OpenAI/Anthropic). T
 ## Step 2: Make Your First API Call
 
 ### Tasks
-- [ ] Get an API key from OpenAI or Anthropic
-- [ ] Make a simple API call
-- [ ] Print the response
+- [x] Get an API key from OpenAI or Anthropic
+- [x] Make a simple API call
+- [x] Print the response
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
