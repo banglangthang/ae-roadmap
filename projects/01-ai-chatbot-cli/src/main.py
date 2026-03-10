@@ -1,8 +1,11 @@
 from rich.prompt import Prompt
 
 from api_client import chat
+from history import History
 
-messages = []
+history = History()
+USER = "user"
+ASSISTANT = "assistant"
 
 
 def main():
@@ -10,9 +13,9 @@ def main():
         message: str = Prompt.ask("[green]User Input[/green]")
         if message == "/quit":
             break
-        messages.append({"role": "user", "content": message})
-        response = chat(messages=messages)
-        messages.append({"role": "assistant", "content": response})
+        history.add_message(USER, message)
+        response = chat(messages=history.get_messages())
+        history.add_message(ASSISTANT, response)
 
 
 if __name__ == "__main__":
