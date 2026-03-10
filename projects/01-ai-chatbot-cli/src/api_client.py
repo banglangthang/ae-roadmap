@@ -15,27 +15,17 @@ client = OpenAI(
 console = Console()
 
 
-def chat(message: str):
+def chat(messages: list):
     stream = client.chat.completions.create(
         model="gpt-4o",
-        messages=[
-            {
-                "role": "user",
-                "content": message,
-            },
-        ],
+        messages=messages,
         stream=True,
     )
+    response = []
     console.print("Chatbot: ", style="green", end="")
     for chunk in stream:
         if len(chunk.choices) > 0 and chunk.choices[0].delta.content is not None:
+            response.append(chunk.choices[0].delta.content)
             console.print(chunk.choices[0].delta.content, end="")
     print("\n")
-
-
-def main():
-    chat("Hello, who are you? Which models are you using?")
-
-
-if __name__ == "__main__":
-    main()
+    return " ".join(response)

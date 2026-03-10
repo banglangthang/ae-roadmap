@@ -10,7 +10,9 @@ def main():
         message: str = Prompt.ask("[green]User Input[/green]")
         if message == "/quit":
             break
-        chat(message=message)
+        messages.append({"role": "user", "content": message})
+        response = chat(messages=messages)
+        messages.append({"role": "assistant", "content": response})
 
 
 if __name__ == "__main__":

@@ -122,9 +122,9 @@ You should have a working chat in your terminal!
 ## Step 4: Add Conversation History
 
 ### Tasks
-- [ ] Store messages in a list
-- [ ] Send full history with each request
-- [ ] Understand context window limits
+- [x] Store messages in a list
+- [x] Send full history with each request
+- [x] Understand context window limits
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
