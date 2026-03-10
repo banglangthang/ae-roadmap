@@ -10,14 +10,14 @@ load_dotenv(dotenv_path, override=True)
 
 
 client = OpenAI(
-    base_url="http://localhost:1222/v1",
+    base_url="http://localhost:8317/v1",
 )
 console = Console()
 
 
 def chat(messages: list):
     stream = client.chat.completions.create(
-        model="gpt-4o",
+        model="qwen3-coder-flash",
         messages=messages,
         stream=True,
     )
