@@ -5,6 +5,7 @@ from api_client import chat
 from command.command_registry import CommandRegistry
 from command.mode_command import ModeCommand
 from command.quit_command import QuitCommand
+from command.save_conversation_command import SaveConversationCommand
 from context import AppContext
 from history import History
 
@@ -13,6 +14,7 @@ USER = "user"
 ASSISTANT = "assistant"
 CommandRegistry.register("/quit", QuitCommand)
 CommandRegistry.register("/mode", ModeCommand)
+CommandRegistry.register("/save", SaveConversationCommand)
 
 
 def main():
