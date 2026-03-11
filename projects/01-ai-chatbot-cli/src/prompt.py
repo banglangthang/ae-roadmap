@@ -15,4 +15,5 @@ def get_system_prompt(mode: str) -> str:
         case "creative":
             return SYSTEM_PROMPT.get("creative").get("system_prompt")
         case _:
+            print(f"Mode {mode} not supported")
             return ""
