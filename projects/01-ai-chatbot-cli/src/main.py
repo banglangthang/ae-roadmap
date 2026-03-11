@@ -3,6 +3,8 @@ from rich.prompt import Prompt
 
 from api_client import chat
 from command.command_registry import CommandRegistry
+from command.list_conversations_command import ListConversationCommand
+from command.load_conversation import LoadConversation
 from command.mode_command import ModeCommand
 from command.quit_command import QuitCommand
 from command.save_conversation_command import SaveConversationCommand
@@ -15,6 +17,8 @@ ASSISTANT = "assistant"
 CommandRegistry.register("/quit", QuitCommand)
 CommandRegistry.register("/mode", ModeCommand)
 CommandRegistry.register("/save", SaveConversationCommand)
+CommandRegistry.register("/list", ListConversationCommand)
+CommandRegistry.register("/load", LoadConversation)
 
 
 def main():
