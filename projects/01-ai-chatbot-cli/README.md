@@ -10,11 +10,11 @@ Build a command-line chatbot that integrates with LLM APIs (OpenAI/Anthropic). T
 ## Learning Objectives
 - [x] Python fundamentals for AI development
 - [x] Working with REST APIs
-- [ ] LLM API integration (OpenAI/Anthropic)
-- [ ] Prompt engineering techniques
-- [ ] Conversation history management
-- [ ] System prompts and few-shot examples
-- [ ] Error handling and rate limiting
+- [x] LLM API integration (OpenAI/Anthropic)
+- [x] Prompt engineering techniques
+- [x] Conversation history management
+- [x] System prompts and few-shot examples
+- [x] Error handling and rate limiting
 
 ---
 
