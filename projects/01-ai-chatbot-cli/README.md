@@ -251,9 +251,9 @@ You should be able to close the app, reopen it, and continue a previous conversa
 ## Step 8: Error Handling & Polish
 
 ### Tasks
-- [ ] Handle API errors gracefully
-- [ ] Handle rate limiting
-- [ ] Add helpful error messages
+- [x] Handle API errors gracefully
+- [x] Handle rate limiting
+- [x] Add helpful error messages
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
