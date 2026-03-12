@@ -9,7 +9,7 @@ from command.mode_command import ModeCommand
 from command.quit_command import QuitCommand
 from command.save_conversation_command import SaveConversationCommand
 from context import AppContext
-from exceptions import ProviderURLNotFound
+from exceptions import ProviderURLNotFoundException
 from history import History
 
 APP_CONTEXT = AppContext(history=History(), console=Console())
@@ -39,7 +39,7 @@ def main():
                 history.add_message(USER, message)
                 response = chat(messages=history.get_messages())
                 history.add_message(ASSISTANT, response)
-        except ProviderURLNotFound as e:
+        except ProviderURLNotFoundException as e:
             console.print(f"[red]{e}[red]")
             console.print(f"[red]{e.status_code}[red]")
             break

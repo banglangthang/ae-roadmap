@@ -2,7 +2,7 @@ import os
 from os.path import dirname, join
 
 from dotenv import load_dotenv
-from openai import OpenAI, base_url
+from openai import OpenAI
 
 dotenv_path = join(dirname(__file__), ".env")
 load_dotenv(dotenv_path, override=True)

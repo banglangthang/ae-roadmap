@@ -1,13 +1,13 @@
 """Custom execeptions for the AI chatbot CLI"""
 
 
-class ChatBotError(Exception):
+class ChatBotException(Exception):
     """BaseExeception for chatbot-related errros"""
 
     pass
 
 
-class APIError(ChatBotError):
+class APIException(ChatBotException):
     """Exception for API-related errors"""
 
     def __init__(self, message, status_code=None, original_error=None) -> None:
@@ -16,35 +16,25 @@ class APIError(ChatBotError):
         self.original_error = original_error
 
 
-class AuthenticationError(APIError):
+class AuthenticationException(APIException):
     """Raised when API authentication fails"""
 
     pass
 
 
-class ProviderURLNotFound(APIError):
+class ProviderURLNotFoundException(APIException):
     """Raised when provider url not found"""
 
     pass
 
 
-class RateLimitError(APIError):
+class RateLimitException(APIException):
     """Raised when network connectivity issues occur"""
 
     pass
 
 
-class ValidationError(ChatBotError):
-    """Raised when validation fails"""
-
-
-class FileNotFoundException(ChatBotError):
+class FileNotFoundException(ChatBotException):
     """Raised when file cannot be found"""
-
-    pass
-
-
-class ContextTooLongError(ChatBotError):
-    """Raised when converstain limit exceeded"""
 
     pass
