@@ -9,6 +9,7 @@ from command.mode_command import ModeCommand
 from command.quit_command import QuitCommand
 from command.save_conversation_command import SaveConversationCommand
 from context import AppContext
+from exceptions import ProviderURLNotFound
 from history import History
 
 APP_CONTEXT = AppContext(history=History(), console=Console())
@@ -23,19 +24,27 @@ CommandRegistry.register("/load", LoadConversation)
 
 def main():
     while True:
-        message: str = Prompt.ask("[green]User Input[/green]")
-        if message.startswith("/"):
-            if message in CommandRegistry.commands:
-                command = CommandRegistry.get_command(message)
-                if command is not None:
-                    command().execute(APP_CONTEXT)
+        history = APP_CONTEXT.history
+        console = APP_CONTEXT.console
+        try:
+            message: str = Prompt.ask("[green]User Input[/green]")
+            if message.startswith("/"):
+                if message in CommandRegistry.commands:
+                    command = CommandRegistry.get_command(message)
+                    if command is not None:
+                        command().execute(APP_CONTEXT)
+                else:
+                    print(f"Command '{message}' not found")
             else:
-                print(f"Command '{message}' not found")
-        else:
-            history = APP_CONTEXT.history
-            history.add_message(USER, message)
-            response = chat(messages=history.get_messages())
-            history.add_message(ASSISTANT, response)
+                history.add_message(USER, message)
+                response = chat(messages=history.get_messages())
+                history.add_message(ASSISTANT, response)
+        except ProviderURLNotFound as e:
+            console.print(f"[red]{e}[red]")
+            console.print(f"[red]{e.status_code}[red]")
+            break
+        except KeyboardInterrupt:
+            break
 
 
 if __name__ == "__main__":
