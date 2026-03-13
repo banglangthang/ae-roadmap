@@ -9,3 +9,5 @@ from history import History
 class AppContext:
     history: History
     console: Console
+    provider: str
+    model: str

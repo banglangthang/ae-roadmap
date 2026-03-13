@@ -276,25 +276,18 @@ The app should never crash with an ugly error. Always show helpful messages.
 ## Stretch Goals (Optional)
 
 ### Multi-Model Support
-- [ ] Support both OpenAI and Anthropic
-- [ ] Add `/model` command to switch
+- [x] Support both OpenAI and Anthropic
+- [x] Add `/model` command to switch
 
 **Docs**: Compare the two APIs - notice the differences in message format
 
 ### Token Counting
-- [ ] Count tokens in messages
-- [ ] Show estimated cost
-- [ ] Warn when approaching limits
+- [x] Count tokens in messages
+- [x] Show estimated cost
 
 **Docs**: 
 - https://github.com/openai/tiktoken (Token counting library)
 - https://openai.com/pricing (Pricing info)
-
-### Few-Shot Examples
-- [ ] Add example conversations to prompts
-- [ ] Improve response quality for specific tasks
-
-**Docs**: https://www.promptingguide.ai/techniques/fewshot
 
 ---
 
@@ -336,6 +329,6 @@ _Add your learning notes here as you progress_
 
 ---
 
-**Status**: Not Started  
+**Status**: Done
 **Started**: -  
 **Completed**: -

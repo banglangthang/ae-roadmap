@@ -19,7 +19,7 @@ load_dotenv(dotenv_path, override=True)
 
 
 client = OpenAI(
-    base_url="http://localhost:8317/v1",
+    base_url="http://localhost:8317/v111",
 )
 console = Console()
 

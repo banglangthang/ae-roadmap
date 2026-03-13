@@ -1,5 +1,6 @@
 import json
 
+from litellm import cost_per_token
 from rich.prompt import Prompt
 
 from command.command import Command
@@ -7,7 +8,7 @@ from context import AppContext
 from exceptions import FileNotFoundException
 
 
-class LoadConversation(Command):
+class LoadConversationCommand(Command):
     def execute(self, context: AppContext) -> None:
         try:
             conversation_id = Prompt.ask(
@@ -19,6 +20,7 @@ class LoadConversation(Command):
                 conversations = json.load(conversation_file)
                 if conversation_id in conversations:
                     console = context.console
+                    # Clear the chat console before printing the old conversation
                     console.clear()
                     messages = conversations[conversation_id]
                     for message in conversations[conversation_id]:

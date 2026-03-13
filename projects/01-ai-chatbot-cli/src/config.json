@@ -1,0 +1,19 @@
+{
+  "providers": {
+    "openai": {
+      "models": {
+        "gpt-4o": {
+          "name": "gpt 4o"
+        },
+        "gpt-4o-mini": {
+          "name": "gpt 4o mini"
+        }
+      }
+    },
+    "custom": {
+      "models": {
+        "qwen3-coder-flash": "qwen3 coder flash"
+      }
+    }
+  }
+}

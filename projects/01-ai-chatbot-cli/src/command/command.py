@@ -5,5 +5,5 @@ from context import AppContext
 
 class Command(ABC):
     @abstractmethod
-    def execute(self, context: AppContext) -> None:
+    def execute(self, context: AppContext):
         pass
