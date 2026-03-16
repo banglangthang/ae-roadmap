@@ -1,0 +1,10 @@
+[project]
+name = "02-document-qa-rag"
+version = "0.1.0"
+description = "Let's understand RAG"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=1.0.0",
+    "python-dotenv>=1.2.2",
+]
