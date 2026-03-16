@@ -2,13 +2,6 @@
 
 A hands-on, project-based learning path to become an AI Engineer.
 
-## Your Current Knowledge
-- AI vs AGI concepts
-- What is an Agent
-- MCP (Model Context Protocol) basics
-- Basic Prompt Engineering
-- Basic Neural Networks
-
 ## Learning Path Overview
 
 | Phase | Duration | Focus | Project |
@@ -82,19 +75,6 @@ Every project README contains:
    - Checkpoint to verify success
 5. **Self-Check Questions** - Test your understanding
 6. **Stretch Goals** - Optional advanced features
-
----
-
-## Progress Tracker
-
-```
-Phase 1: [░░░░░░░░░░] 0%  ← Start here!
-Phase 2: [░░░░░░░░░░] 0%
-Phase 3: [░░░░░░░░░░] 0%
-Phase 4: [░░░░░░░░░░] 0%
-
-Overall:  [░░░░░░░░░░] 0%
-```
 
 ---
 

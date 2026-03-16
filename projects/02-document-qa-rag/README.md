@@ -8,15 +8,15 @@ Build a Retrieval-Augmented Generation (RAG) system that allows users to upload 
 ---
 
 ## Prerequisites
-- [ ] Completed Project 1 (AI Chatbot CLI)
-- [ ] Understanding of API calls and conversation management
+- [x] Completed Project 1 (AI Chatbot CLI)
+- [x] Understanding of API calls and conversation management
 
 ---
 
 ## Learning Objectives
-- [ ] Understanding RAG architecture
-- [ ] Text embeddings and vector representations
-- [ ] Vector databases (ChromaDB, Pinecone)
+- [x] Understanding RAG architecture
+- [x] Text embeddings and vector representations
+- [x] Vector databases (ChromaDB, Pinecone)
 - [ ] Document processing and chunking
 - [ ] Semantic search
 - [ ] Retrieval strategies
@@ -43,9 +43,9 @@ Build a Retrieval-Augmented Generation (RAG) system that allows users to upload 
 ## Step 1: Understand RAG Conceptually
 
 ### Tasks
-- [ ] Read about RAG architecture
-- [ ] Understand why RAG is needed
-- [ ] Learn the RAG pipeline
+- [x] Read about RAG architecture
+- [x] Understand why RAG is needed
+- [x] Learn the RAG pipeline
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
