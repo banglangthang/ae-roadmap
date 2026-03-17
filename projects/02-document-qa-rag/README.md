@@ -75,9 +75,9 @@ Can you explain RAG to someone in 2 sentences?
 ## Step 2: Document Loading
 
 ### Tasks
-- [ ] Load text files (.txt, .md)
-- [ ] Load PDF files
-- [ ] Extract clean text from documents
+- [x] Load text files (.txt, .md)
+- [x] Load PDF files
+- [x] Extract clean text from documents
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
@@ -106,9 +106,9 @@ You should be able to load any document and print its text content.
 ## Step 3: Text Chunking
 
 ### Tasks
-- [ ] Understand why we chunk documents
-- [ ] Implement basic chunking
-- [ ] Add chunk overlap
+- [x] Understand why we chunk documents
+- [x] Implement basic chunking
+- [x] Add chunk overlap
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
