@@ -153,9 +153,9 @@ Given a document, you should get a list of overlapping text chunks.
 ## Step 4: Understanding Embeddings
 
 ### Tasks
-- [ ] Understand what embeddings are
-- [ ] Learn about vector similarity
-- [ ] Generate your first embeddings
+- [x] Understand what embeddings are
+- [x] Learn about vector similarity
+- [x] Generate your first embeddings
 
 ### Documentation to Read
 | Topic | Link | What to Learn |
