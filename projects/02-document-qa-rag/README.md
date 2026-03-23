@@ -192,9 +192,9 @@ You should be able to generate embeddings and see that similar texts have simila
 ## Step 5: Vector Database Setup
 
 ### Tasks
-- [ ] Choose a vector database
-- [ ] Set up ChromaDB locally
-- [ ] Store and retrieve embeddings
+- [x] Choose a vector database
+- [x] Set up ChromaDB locally
+- [x] Store and retrieve embeddings
 
 ### Documentation to Read
 | Topic | Link | What to Learn |

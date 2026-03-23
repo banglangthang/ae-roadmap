@@ -19,6 +19,13 @@ def embed_content():
         print(f"Embedding sample: {embedding[:5]}")  # Print first 5 dimensions
 
 
+def embed_sentence(sentence):
+    model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    embedding = model.encode(sentence)
+
+    return embedding
+
+
 def embed_sentences(sentences):
     model = SentenceTransformer("all-mpnet-base-v2")
 
@@ -50,13 +57,3 @@ def calculate_similarity(sentences, embeddings):
     pairwise_similarities = cosine_similarity(embeddings)
     print("\nPairwise similarity matrix:")
     print(pairwise_similarities)
-
-
-sentences = [
-    "The cat sat on the mat.",
-    "A feline rested on the rug.",
-    "The car is parked in the garage.",
-]
-
-embeddings = embed_sentences(sentences)
-calculate_similarity(sentences, embeddings)
